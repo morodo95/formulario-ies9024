@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vista/mainformulario1.css">
+    <link rel="stylesheet" href="vista/mainformulario2.css">
+    <link rel="stylesheet" href="vista/mainformulario3.css">
+    <link rel="stylesheet" href="vista/mainformulario4.css">
+    <link rel="stylesheet" href="vista/miestilo.css">
+    <link rel="stylesheet" href="vista/font-awesome.css">
+    <link rel="stylesheet" href="vista/style.css">
+    <script src="controlador/jquery-3.2.1.min.js"></script>
+    <script src="controlador/main.js"></script>
+    <title>Registro IES-9024 Online</title>
+</head>
+<body>
+        <div class="form_top">
+            <h2>IES 9-024 - <span>INSCRIPCIÒN </span>- SISTEMAS <span>PAGINA 1</span></h2>
+            <img src="./img/LOGO_NUEVO.png" >
+            <h4>Esta ficha de Aspirante a ingreso resulta de suma importancia para </h4>
+            <h4>ustedes y nosotros, le rogamos <span style="color:red">LEER</span> con atención cada punto y</h4>
+            <h4> constestarlo en forma clara y precisa.</h4>
+            <h2 style="color:brown">LLENAR OBLIGATORIAMENTE COMO ESTA EN EL DOCUMENTO</h2>
+        </div>
+        <div class="wrap">
+            <ul>
+                <ul class="tabs">
+                    <li><a href="#tab1"><span aria-hidden="true"><span class="tab-text">Inicio</span></span></a></li>
+                    <li><a href="#tab2"><span aria-hidden="true"><span class="tab-text">Primer Pagina</span></span></a></li>
+                    <li><a href="#tab3"><span aria-hidden="true"><span class="tab-text" >Segunda Pagina </span></span></a></li>
+                    <li><a href="#tab4"><span aria-hidden="true"><span class="tab-text" >Tercera Pagina </span></span></a></li>
+                    <li><a href="#tab5" style="background-color: red"><span aria-hidden="true"><span class="tab-text">Enviar Formulario </span></span></a></li>
+                </ul>
+            </ul>
+            <div class="secciones">
+            <!--Inicio de la primera seccion--> 
+            <form action="mostrarDatos" name="prueba" class="form_reg" method="POST">
+                <article id="tab1">
+                    <h2>¡Bienvenido!</h2>  
+                    <br>
+                    <p>Este es un mini-tutorial sobre como completar el formulario.</p>
+                    <p>Este paso no eso obligatorio, pero podra saber mas.</p>
+                    <br>
+                    <h3>¿Como empiezo a llenar el formulario?</h3>
+                    <br>
+                    <p> 1)En este primer pas indicaremos como ir a la primera pagina</p>
+                    <a href="../../../../../AppData/Local/Temp/httplamosquitera.org20170914causa-tupac-amaru-aun-sigue-detenido-el-hijo-de-nelida-rojas.URL"></a>
+                    
+                </article>
+                <article id="tab2">
+                   <center>
+                    <input class="input" name="apellido" type="text" id="apellidos" placeholder="&#128100 Apellido - Como esta en documento de identidad(c.o)"  >
+                    <input class="input" name="nombre" type="text" id="nombres" placeholder="&#128100 Nombres - Como esta en el documento de identidad(c.o)"  >   
+                   </center>                 
+                   <br>
+                   <!--DOCUMENTO DE IDENTIDAD-->
+                       <div class="checkbox_dni">
+                           <div class="checkbox">
+                               <center><h4>DOCUMENTO DE IDENTIDAD(c.o):</h4></center>
+                               <br>                
+                               <input type="radio" id="DNI"  name="tipo" value="DNI">
+                               <label for="DNI">1-DNI</label>
+
+                               <input type="radio" id="DNI1" name="tipo" value="L.E/L.C">
+                               <label for="DNI1">2-L.E/L.C</label>
+
+                               <input type="radio" id="DNI2" name="tipo" value="Cedula">
+                               <label for="DNI2">3-Cedula</label>
+
+                               <input type="radio" id="DNI3" name="tipo" value="Pasaporte">
+                               <label for="DNI3">4-Pasaporte</label>
+                               <input class="input" type="number" name="dni" id="numdni" placeholder="Numero de Documento">
+                           </div>
+                        </div>
+                   <!--DOCUMENTO DE IDENTIDAD-->
+                       <br>
+                   <!--DATOS DE NACIMIENTO-->
+                       <div class="container2"> 
+                           <div class="form_top">   
+                               <br>
+                               <input class="input" name="provincia" id="provincia" type="text" placeholder="&#1769 Provincia (c.o)" >
+                               <input class="input" name="departamento" id="departamento" type="text" placeholder="&#1769; Departamento(c.o)" >
+                               <input class="input" name="extranjero" id="extranjero" type="text" placeholder="PAIS - Solo extrangeros" >
+                               <input class="input" name="nacionalidad" id="nacionalidad" type="text" placeholder="&#1769; Nacionalidad(c.o)" >
+
+                           </div>
+                       </div>
+
+                       <center><div class="checkbox_dni">
+                           <div class="checkbox">
+                               <h1>Fecha de nacimiento(c.o)</h1>
+                               <br>
+                               <input name="nacimiento" class="input" style="padding:0" type="date" id="nacimiento" >
+
+                               <h4>Sexo:(c.o)</h4>  
+                               <br>
+                                   <input type="radio" id="varon" name="sexo" value="Masculino">
+                                   <label for="varon">Varón</label>
+
+                                   <input type="radio" id="mujer" name="sexo" value="Femenino">
+                                   <label for="mujer">Mujer</label>
+
+                               <h4>¿Tiene obra social?(c.o)</h4>
+                               <br>
+
+                                       <input type="radio" id="si1" name="obra" value="Si">
+                                       <label for="si1">Si</label>
+
+                                       <input type="radio" id="no1" name="obra" value="No">
+                                       <label for="no1">No</label>
+                               <h4>¿Esta bécado?(c.o)</h4> 
+                               <br>
+                                       <input type="radio" id="si2" name="becado" value="Si">
+                                       <label for="si2">Si</label>
+
+                                       <input type="radio" id="no2" name="becado" value="No">
+                                       <label for="no2">No</label>
+
+                               <h4>¿Tiene seguro de vida?(c.o)</h4>  
+                               <br>
+                                       <input type="radio" id="si3" name="seguro" value="Si">
+                                       <label for="si3">Si</label>
+
+                                       <input type="radio" id="no3" name="seguro" value="No">
+                                       <label for="no3">No</label>
+                           </div>
+                       </div>
+                           
+                       </center>
+                   </article>
+                   <!--DATOS DE NACIMIENTO-->
+                   <!--Fin de la primera seccion-->  
+
+                   <!--Inicio de la Segunda seccion--> 
+
+                    <article id="tab3">
+                            <h6>Estudio Primario <span style="color:red;">(para ingresantes por Art. 7)</span></h6>
+                            <br>
+                            <input class="input" type="text" name="establecimiento" id="establecimiento" placeholder="&#128100 Nombre del establecimiento" >
+                            <input class="input" type="text" name="egreso" id="egreso" placeholder="&#128100 Año en que egresó del Nivel Primario" >
+
+                            <center><div class="checkbox_dni">
+                                <div class="checkbox">
+                                    <br>
+                                    <h4>Jurisdicción de la escuela:</h4>  
+                                    <br>
+                                    <input type="radio" id="jurisdiccion1" name="jurisdiccion" value="Estatal" >
+                                    <label for="jurisdiccion1">Estatal</label>
+
+                                    <input type="radio" id="jurisdiccion2" name="jurisdiccion" value="Privado">
+                                    <label for="jurisdiccion2">Privado</label>
+                                    <input type="radio" id="jurisdiccion3" name="jurisdiccion" value="Extranjera">
+                                    <label for="jurisdiccion3">Extranjera</label>
+                                    <input type="radio" id="jurisdiccion4" name="jurisdiccion" value="Sin titulo">
+                                    <label for="jurisdiccion4">Sin titulo</label>
+                                </div>
+                            </div>
+                            <br>
+                            <h4>Estudios secundarios o Nivel Polimodal </h4>
+                            <br>
+                            <input class="input" id="establecimientosecundario" name="establecimiento2" type="text" placeholder="&#128100 Nª y Nombre del establecimiento">
+                            <input class="input" id="titulosecundario" type="text" name="titulosecundario" placeholder="&#128100 Descripción del titulo Obtenido" >
+                            <input class="input" id="egresosecundario" type="text" name="egresosecundario" placeholder="&#128100 Año en que egresó o egresará del Secundario o Nivel Medio">
+                            <div class="checkbox_dni">
+                                <div class="checkbox">
+                                    <br>
+                                    <h4>¿Adeuda Asignaturas?</h4>   
+                                    <br>
+                                    <input type="radio" id="asignaturas1" name="asignatura" value="Si">
+                                    <label for="asignaturas1">Si</label>
+                                    <input type="radio" id="asignaturas2" name="asignatura" value="No">
+                                    <label for="asignaturas2">No</label>
+                                    <input class="input" id ="adeuda" type="text" placeholder="&#128100 ¿Cuantas?" >
+                                </div>
+                            </div>
+
+                            <div class="checkbox_dni">
+                                <div class="checkbox">
+                                    <br>
+                                    <h4>Jurisdicción de la escuela:</h4> 
+                                    <br>
+                                    <input type="radio" id="jurisdiccionuni1" name="jurisdiccionuni" value="UNCuyo">
+                                    <label for="jurisdiccionuni1">UNCuyo</label>
+                                    <input type="radio" id="jurisdiccionuni2" name="jurisdiccionuni" value="Estatal">
+                                    <label for="jurisdiccionuni2">Estatal</label>
+                                    <input type="radio" id="jurisdiccionuni3" name="jurisdiccionuni" value="Privado">
+                                    <label for="jurisdiccionuni3">Privado</label>
+                                    <input type="radio" id="jurisdiccionuni4" name="jurisdiccionuni" value="Extranjera">
+                                    <label for="jurisdiccionuni4">Extranjera</label>
+                                    <input type="radio" id="jurisdiccionuni5" name="jurisdiccionuni" value="Sin Titulo">
+                                    <label for="jurisdiccionuni5">Sin titulo</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="checkbox_dni">
+                                <div class="checkbox">
+                                    <h4>Otros estudios superiores</h4>  
+                                    <br>
+                                    <input type="radio" id="estudios1" name="estudios" value="Universitarios">
+                                    <label for="estudios1">1-Universitarios</label>
+                                    <input type="radio" id="estudios2" name="estudios" value="Terciarios">
+                                    <label for="estudios2">2-Terciarios</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="checkbox_dni">
+                                <div class="checkbox">
+                                    <input type="radio" id="estudiosuper1" name="estudiosuper" value="Finalizo">
+                                    <label for="estudiosuper1">1-Finalizo</label>
+                                    <input type="radio" id="estudiosuper2" name="estudiosuper" value="Abandono">
+                                    <label for="estudiosuper2">2-Abandono</label>
+                                    <input type="radio" id="estudiosuper3" name="estudiosuper" value="Continua">
+                                    <label for="estudiosuper3">3-Continúa</label>
+                                    <input class="input" type="text" id="materias" name="materiasaprobadas" placeholder="&#128100 Materias Aprobadas" >
+                                </div>
+                            </div>
+                            <br>
+                            <input class="input" type="text" name="universidad" placeholder="&#128100 Universidad o Instituto" >
+                            <input class="input" type="text" name="carrerauni" placeholder="&#128100 Carrera" >
+                            <input class="input" type="text" name="descripcionuni" placeholder="&#128100 Descripcion del titulo" >
+                            <br>
+
+                            <div class="checkbox_dni">
+                                <div class="checkbox">
+                                    <br>
+                                    <h4>Dificultades severas o discapacidad Permanente/Transito</h4>  
+                                    <br>
+                                    <input type="checkbox" id="discapacidad1" name="discapacidad" value="Neurologica">
+                                    <label for="discapacidad1">1-Neurologica</label>
+                                    <input type="checkbox" id="discapacidad2" name="discapacidad" value="Motora">
+                                    <label for="discapacidad2">2-Motora</label>
+                                    <input type="checkbox" id="discapacidad3" name="discapacidad" value="Renal">
+                                    <label for="discapacidad3">3-Renal</label>
+                                    <input type="checkbox" id="discapacidad4" name="discapacidad" value="Respiratoria">
+                                    <label for="discapacidad4">4-Respiratoria</label>
+                                    <input type="checkbox" id="discapacidad5" name="discapacidad" value="Auditiva">
+                                    <label for="discapacidad5">5-Auditiva</label>
+                                    <input type="checkbox" id="discapacidad6" name="discapacidad" value="Psicologica">
+                                    <label for="discapacidad6">6-Psicológica</label>
+                                    <input type="checkbox" id="discapacidad7" name="discapacidad" value="Cardiaca">
+                                    <label for="discapacidad7">7-Cardiaca</label>
+                                    <input type="checkbox" id="discapacidad8" name="discapacidad" value="Visual">
+                                    <label for="discapacidad8">8-Visual</label>
+                                    <input type="checkbox" id="discapacidad9" name="discapacidad" value="Metabolica">
+                                    <label for="discapacidad9">9-Metabólica</label>
+                                    <input type="checkbox" id="discapacidad10" name="discapacidad" value="Trastorno Oral/Escrito">
+                                    <label for="discapacidad10">10-Transtorno Oral/Escrito</label>
+                                    <input type="checkbox" id="discapacidad11" name="discapacidad" value="Otra">
+                                    <label for="discapacidad11">11-Otra</label>
+                                    <br>
+                                    <input class="input" type="text" name="discapacidadotra" placeholder="¿Cual?">
+                                    <br>
+                                    <h4>Si usted no posee ninguna dificultad o discapacidad, no marque ninguna</h4>
+                                </div>
+
+                            </div> 
+                            <br>
+                    </article></center>
+                    <!--Fin de la Segunda seccion-->
+
+                <!--Inicio de la Tercera seccion--> 
+                
+                <article id="tab4">
+                    <center>
+                    <h6>Datos familiares:</h6>
+                    <br>
+                    <div class="checkbox_dni">
+                        <div class="checkbox">
+                                    <h4>¿Padre vive?(c.o)</h4>  
+                                    <br>
+                                    <input type="radio" id="padrevive1" name="padrevive" value="Si">
+                                    <label for="padrevive1">1-Si</label>
+                                    <input type="radio" id="padrevive2" name="padrevive" value="No">
+                                    <label for="padrevive2">2-No</label>     
+                                    <input type="radio" id="padrevive3" name="padrevive" value="No sabe">
+                                    <label for="padrevive3">3-No Se</label>  
+                        </div>
+                    </div>
+                    <br>
+                    <div class="checkbox_dni">
+                        <div class="checkbox">
+                                <h4>¿Padre trabaja?(c.o)</h4>   
+                                <br>
+                                <input type="checkbox" id="padretrabaja1" name="padretrabaja" value="Si">
+                                <label for="padretrabaja1">Si</label>
+                                <input type="radio" id="padretrabaja2" name="padretrabaja" value="No">
+                                <label for="padretrabaja2">No</label>
+                                <input type="radio" id="padretrabaja3" name="padretrabaja" value="No sabe">
+                                <label for="padretrabaja3">No sabe</label>
+                                <input class="input" type="text" name="ocupacion" placeholder="Ocupacion" >                            
+                        </div>
+                    </div>
+                    <div class="checkbox_dni">
+                       <div class="checkbox">
+                           <br>
+                                <h4>¿Madre vive?(c.o)</h4>   
+                                <br>
+                                <input type="radio" id="madre1" name="madre" value="Si">
+                                <label for="madre1">Si</label>
+                                <input type="radio" id="madre2" name="madre" value="No">
+                                <label for="madre2">No</label>
+                                <input type="radio" id="madre3" name="madre" value="No sabe">
+                                <label for="madre3">No sabe</label>       
+                        </div>
+                    </div>
+                    <div class="checkbox_dni">
+                       <div class="checkbox">
+                           <br>
+                                <h4>¿Madre trabaja?(c.o)</h4>  
+                                <br>
+                                <input type="radio" id="madretrabaja1" name="madretrabaja" value="Si">
+                                <label for="madretrabaja1">Si</label>
+
+                                <input type="radio" id="madretrabaja2" name="madretrabaja" value="No">
+                                <label for="madretrabaja2">No</label>
+
+
+                                <input type="radio" id="madretrabaja3" name="madretrabaja" value="No sabe">
+                                <label for="madretrabaja3">No sabe</label>    
+                                <input class="input" type="text" name="madreocupacion" placeholder="Ocupacion" >
+                        </div>
+                    </div>    
+                    </center>
+                </article>  
+                
+                
+                <article id="tab5">           
+                    <center>
+                        <h2 style="color:brown">VERIFIQUE QUE TODOS LOS CAMPOS ESTEN COMPLETOS</h2>
+                        <h2> Ya que este no sera enviado, si alguno de los campos obligatorios no esta completo</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <input id="botonenviar" type="submit" value="Enviar">
+                        <input type="reset" id="botonenviar" value="Limpiar">
+                    </center>
+                    <br>          
+                </article>  
+                <ul>
+                <ul class="tabs1">
+                    <li>Esta pagina fue creada por alumnos del Ies 9-024</li>
+                    
+                    
+                </ul>
+            </ul>
+            </form>    
+            <a href="javascript:void(0);" onclick="getElementById('ejemplo').direction='left';">
+            </a><a href="javascript:void(0);" onclick="getElementById('ejemplo').direction='right';"></a>
+</body>
+</html>

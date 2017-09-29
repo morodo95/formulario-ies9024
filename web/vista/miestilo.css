@@ -1,0 +1,11 @@
+/*Dispositivos Moviles*/
+body{
+    background-color: red;
+}
+
+/*Dispositivos Desktop & Notebooks*/
+@media(min-width:831px){
+    body{
+        background-color: blue;
+    }
+}

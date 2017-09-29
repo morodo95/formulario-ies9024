@@ -1,0 +1,571 @@
+/*Media Para Celular*/
+@media(min-width:320px){
+ 
+    body{
+        background-color: #EFEFEF;
+        margin: 0%;
+        font-family: 'Lato';
+    }
+
+    /*Contenedor, donde estan los limites y colores*/
+    .container{
+        max-width: 500px;
+        height: auto;
+        background-color: #EFEFEF;
+        margin: 0% auto;
+        padding-bottom: 1rem;
+    }
+
+
+    .form_top{
+        width: 100%;
+        text-align: center;
+        padding: .2rem  ;
+        border-top: solid .3rem #F39B53;
+        margin-bottom: 1rem;
+
+    }
+
+    .form_top h2{
+        font-weight: bold;
+        color: #CAC8C8;
+        font-size: 25px;
+
+    }
+
+    h2 span{
+        color:#F39B53;
+        text-align: center;
+
+    }
+
+
+    .form_reg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .btn_form{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    .input{
+        background-color: #EFEFEF;
+        padding: .7rem;
+        margin: .4rem;
+        border: none;
+        border-bottom: solid #C8C8C8 .2rem;
+        transition: all .5%;
+    }
+
+    .input:focus{
+        border-bottom: solid #f3b853 .3rem;
+
+    }
+
+    .btn_submit, .btn_reset{
+        width: 40%;
+        border-bottom: none;
+        background-color: #31B1E5;
+        color: white;
+    }
+
+
+    
+    .checkbox h6{
+        text-align: center;
+    }
+
+    .checkbox_dni input[type="radio"]{
+        display: none;
+    }
+    .checkbox_dni input[type="checkbox"]{
+        display: none;
+    }
+
+    .checkbox_dni .checkbox label{
+        color:#0774D9;
+        padding: 10px 4px 10px 45px;
+        display:inline-table;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .checkbox_dni .checkbox label:hover{
+
+        background: rgba(0,116,217,0.1); 
+
+    }
+
+    .checkbox_dni .checkbox label:before{
+
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: none;
+        border: 3px solid #0074D9;
+        position: absolute;
+        left: 17px;
+        top: 8px;
+        border-radius: 3px;
+    }
+
+    .checkbox_dni input[type="radio"]:checked + label{
+        padding: 5px 15px;
+        background: #0774D9;
+        border-radius: 2px;
+        color: white;
+
+
+    } 
+    .checkbox_dni input[type="checkbox"]:checked + label{
+        padding: 5px 15px;
+        background: #0774D9;
+        border-radius: 2px;
+        color: white;
+
+
+    } 
+
+
+    .checkbox_dni input[type="radio"]:checked + label:before{
+        display: none;
+
+    }
+    .checkbox_dni input[type="checkbox"]:checked + label:before{
+        display: none;
+
+    }
+
+    h4{
+        background-color: #CAC8C8;
+        font-size: 14pt;
+
+    }
+
+    h1{
+        background-color: #CAC8C8;
+        font-size: 15pt;
+        background-size: auto;
+    }
+
+    #numdni{
+        padding-bottom: 0.3rem;
+        display: flex;
+        font-size: 10pt;  
+    } 
+    
+    .siguiente{
+        width: 50%;
+        text-align: center;
+        padding: .6rem  ;
+        border-top: solid .5rem #F39B53;
+        margin-bottom: 1rem;
+        border-radius: 3px;
+    }
+
+  .restablecer{
+        width: 20%;
+        text-align: center;
+        padding: .6rem  ;
+        border-top: solid .5rem #F39B53;
+        margin-top: 00px;
+        margin-left: 1px;
+        position: relative;
+        border-radius: 3px;
+        font-size: 20px;
+        font-family:monospace;
+    }
+    
+}
+/*Media Para Tablet*/
+@media(min-width:640px){
+     body{
+        background-color: #EFEFEF;
+        margin: 0%;
+        font-family: 'Lato';
+    }
+
+    /*Contenedor, donde estan los limites y colores*/
+    .container{
+        max-width: 100px;
+        height: auto;
+        background-color: #EFEFEF;
+        margin: 0% auto;
+        padding-bottom: 1rem;
+
+
+    }
+
+
+    .form_top{
+        width: 100%;
+        text-align: center;
+        padding: .2rem  ;
+        border-top: solid .3rem #F39B53;
+        margin-bottom: 1rem;
+
+    }
+
+    .form_top h2{
+        font-weight: bold;
+        color: #CAC8C8;
+        font-size: 25px;
+
+    }
+
+    h2 span{
+        color:#F39B53;
+        text-align: center;
+
+    }
+
+
+    .form_reg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .btn_form{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+
+
+    .input{
+        background-color: #EFEFEF;
+        padding: .7rem;
+        margin: .4rem;
+        border: none;
+        border-bottom: solid #C8C8C8 .2rem;
+        transition: all .5%;
+
+
+    }
+
+    .input:focus{
+        border-bottom: solid #f3b853 .3rem;
+
+    }
+
+    .btn_submit, .btn_reset{
+        width: 40%;
+        border-bottom: none;
+        background-color: #31B1E5;
+        color: white;
+
+
+    }
+
+
+    
+    .checkbox h6{
+        text-align: center;
+    }
+
+    .checkbox_dni input[type="radio"]{
+        display: none;
+    }
+    .checkbox_dni input[type="checkbox"]{
+        display: none;
+    }
+
+    .checkbox_dni .checkbox label{
+        color:#0774D9;
+        padding: 10px 4px 10px 45px;
+        display:inline-table;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .checkbox_dni .checkbox label:hover{
+
+        background: rgba(0,116,217,0.1); 
+
+    }
+
+    .checkbox_dni .checkbox label:before{
+
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: none;
+        border: 3px solid #0074D9;
+        position: absolute;
+        left: 17px;
+        top: 8px;
+        border-radius: 3px;
+    }
+
+    .checkbox_dni input[type="radio"]:checked + label{
+        padding: 5px 15px;
+        background: #0774D9;
+        border-radius: 2px;
+        color: white;
+
+
+    } 
+    .checkbox_dni input[type="checkbox"]:checked + label{
+        padding: 5px 15px;
+        background: #0774D9;
+        border-radius: 2px;
+        color: white;
+
+
+    } 
+
+
+    .checkbox_dni input[type="radio"]:checked + label:before{
+        display: none;
+
+    }
+    .checkbox_dni input[type="checkbox"]:checked + label:before{
+        display: none;
+
+    }
+
+
+
+  
+
+
+    h4{
+        background-color: #CAC8C8;
+        font-size: 14pt;
+
+    }
+
+    h1{
+        background-color: #CAC8C8;
+        font-size: 15pt;
+        background-size: auto;
+    }
+
+    #numdni{
+     
+        padding-bottom: 0.3rem;
+        display: flex;
+        font-size: 10pt;  
+    } 
+    
+    .siguiente{
+        width: 100%;
+        text-align: center;
+        padding: .6rem  ;
+        border-top: solid .5rem #F39B53;
+        margin-bottom: 1rem;
+        border-radius: 3px;
+    }
+     .restablecer{
+        width: 20%;
+        text-align: center;
+        padding: .6rem  ;
+        border-top: solid .5rem #F39B53;
+        margin-top: 00px;
+        margin-left: 1px;
+        position: relative;
+        border-radius: 3px;
+        font-size: 20px;
+        font-family:monospace;
+    }
+    
+}
+/*Media Para Notebook,etc.*/
+@media(min-width:1024px){
+    
+/*Cuerpo del Formulario*/
+    body{
+        background-color: #EFEFEF;
+        margin: 0%;
+        font-family: 'Lato';
+    }
+    #apellidos{
+        width: 60%;
+        text-align: center;
+    }
+    #nombres{
+        width: 60%;
+        text-align: center;
+    }
+    /*Contenedor, donde estan los limites y colores*/
+    .container{
+        max-width: 1000px;
+        height: auto;
+        background-color: #EFEFEF;
+        margin: 0% auto;
+        padding-bottom: 1rem;
+    }
+
+    .form_top{
+        width: 100%;
+        text-align: center;
+        padding: .2rem  ;
+        border-top: solid .7rem #F39B53;
+        margin-bottom: 1rem;
+    }
+
+    .form_top h2{
+        font-weight: bold;
+        color: #CAC8C8;
+        font-size: 25px;
+    }
+
+    h2 span{
+        color:#F39B53;
+        text-align: center;
+
+    }
+
+    .form_reg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .btn_form{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    .input{
+        background-color: #EFEFEF;
+        padding: .7rem;
+        margin: .4rem;
+        border: none;
+        border-bottom: solid #C8C8C8 .2rem;
+        transition: all .5%;
+
+
+    }
+
+    .input:focus{
+        border-bottom: solid #f3b853 .3rem;
+    }
+
+    .btn_submit, .btn_reset{
+        width: 40%;
+        border-bottom: none;
+        background-color: #31B1E5;
+        color: white;
+    }
+
+    .checkbox_dni{
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .checkbox_dni input[type="radio"]{
+        display: none;
+    }
+    .checkbox_dni input[type="checkbox"]{
+        display: none;
+    }
+
+    .checkbox_dni .checkbox label{
+        color:#0774D9;
+        padding: 7.8px 15px 5px 51px;;
+        display: inline-table;
+        position:relative;
+        font-size: 1.3em;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .checkbox_dni .checkbox label:hover{
+
+        background: rgba(0,116,217,0.1); 
+
+    }
+
+    .checkbox_dni .checkbox label:before{
+
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: none;
+        border: 3px solid #0074D9;
+        position: absolute;
+        left: 17px;
+        top: 8px;
+        border-radius: 3px;
+    }
+
+    .checkbox_dni input[type="radio"]:checked + label{
+        padding: 5px 15px;
+        background: #0774D9;
+        border-radius: 2px;
+        color: white;
+
+
+    } 
+    .checkbox_dni input[type="checkbox"]:checked + label{
+        padding: 5px 15px;
+        background: #0774D9;
+        border-radius: 2px;
+        color: white;
+
+
+    } 
+
+
+    .checkbox_dni input[type="radio"]:checked + label:before{
+        display: none;
+
+    }
+    .checkbox_dni input[type="checkbox"]:checked + label:before{
+        display: none;
+
+    }
+
+    h4{
+        background-color: #CAC8C8;
+        font-size: 14pt;
+    }
+
+    h1{
+        background-color: #CAC8C8;
+        font-size: 15pt;
+        background-size: auto;
+    }
+
+
+    #numdni{
+        width: 159.5px;
+        padding-bottom: 0.7rem;
+        display: flex;
+        font-size: 10pt;
+        position:absolute;
+        margin-left: 585px;
+        margin-top: -39px;
+    }
+    h6{
+        font-size: 24px;
+    }
+    
+}

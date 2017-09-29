@@ -1,0 +1,51 @@
+@media(min-width:1024px){
+    #establecimiento{
+        width: 50%;
+        text-align: center;
+        margin-left: 200px;
+        
+        
+    }
+    #egreso{
+        width: 50%;
+        text-align: center;
+        margin-left: 200px; 
+       
+    }
+    #establecimientosecundario{
+        width: 32%;  
+    }
+    #titulosecundario{
+        width: 29.9%;
+    }
+    
+    #egresosecundario{
+        width: 30%;
+    }
+    #materias{
+        
+        font-size: 9pt;
+        position:absolute;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 150px;
+    }
+    #adeuda{
+        position: absolute;
+        margin-top: -1px;
+    }
+    h6{
+        text-align: center;
+    }
+    
+    .tab3 .checkbox_dni input {
+        background-color: #EFEFEF;
+        padding: .7rem;
+        margin: .4rem;
+        
+        border: none;
+        border-bottom: solid #C8C8C8 .2rem;
+        transition: all .5%;
+        
+    }
+}

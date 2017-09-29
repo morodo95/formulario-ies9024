@@ -1,0 +1,9 @@
+#botonenviar{
+        width: 20%;
+        font-size: 18px;
+        text-align: center;
+        padding: .6rem  ;
+        border-top: solid .5rem #F39B53;
+        margin-bottom: 1rem;
+        border-radius: 3px;
+    }

@@ -27,7 +27,7 @@ public class ConectorBD {
         try {
             String sentencia;
             int x;
-            sentencia = "INSERT INTO alumno VALUES (NULL,'"+for(x:)+"')";
+            sentencia = "INSERT INTO alumno VALUES (NULL,)";
             statement = this.conexion.createStatement();
             statement.executeUpdate(sentencia);
             System.out.println("Realizados");

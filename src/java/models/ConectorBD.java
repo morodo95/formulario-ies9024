@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class ConectorBD {
     Connection conexion;
-    final String URL_BASEDATOS = "jdbc:mysql://127.0.0.1/Formulario_DB";
+    final String URL_BASEDATOS = "127.0.0.1/ies9024";
     final String USUARIO = "root";
     final String CONTRASEÑA = "";
     Statement state;
@@ -21,12 +21,13 @@ public class ConectorBD {
         }
     }
 
-    public void insertar(String nombre, String apellido, int edad) {
+    public void insertar(Alumno alumno) {
         Statement statement;
 
         try {
             String sentencia;
-            sentencia = "INSERT INTO Alumno VALUES (NULL,'" + nombre + "','" + apellido + "','" + edad + "')";
+            int x;
+            sentencia = "INSERT INTO alumno VALUES (NULL,'"+for(x:)+"')";
             statement = this.conexion.createStatement();
             statement.executeUpdate(sentencia);
             System.out.println("Realizados");

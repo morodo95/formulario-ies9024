@@ -24,10 +24,7 @@ public class NewServlet2 extends HttpServlet {
             out.println("<title>Servlet NewServlet2</title>");            
             out.println("</head>");
             out.println("<body>");
-            for(int x=0;x<36;x++){
-                Array[x] =  request.getParameter(array.nextElement());
-                out.println("<h1>"+Array[x]+"</h1>");
-            }
+            
             out.println("</body>");
             out.println("</html>");
         }

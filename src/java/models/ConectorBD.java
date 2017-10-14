@@ -7,33 +7,35 @@ import java.sql.Statement;
 
 public class ConectorBD {
     Connection conexion;
-    final String URL_BASEDATOS = "jdbc:mysql://127.0.0.1/Formulario_DB";
+    final String URL_BASEDATOS = "jdbc:mysql://localhost/registroies";
     final String USUARIO = "root";
     final String CONTRASEÑA = "";
     Statement state;
     
 
-    public ConectorBD() {
+    public ConectorBD() throws ClassNotFoundException {
         try {
+            Class.forName("com.mysql.jdbc.Driver");
             conexion = (Connection) DriverManager.getConnection(URL_BASEDATOS, USUARIO, CONTRASEÑA);
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
 
-    public void insertar(String nombre, String apellido, int edad) {
+    public void insertar(String dato,String nombre) {
         Statement statement;
 
         try {
             String sentencia;
-            sentencia = "INSERT INTO Alumno VALUES (NULL,'" + nombre + "','" + apellido + "','" + edad + "')";
+            sentencia = "INSERT INTO `Alumno`(`id`, `apellido`,`nombre`) VALUES (null,'"+dato+"','"+nombre+"')";
             statement = this.conexion.createStatement();
             statement.executeUpdate(sentencia);
             System.out.println("Realizados");
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-
     }
+    
+    
 
 }

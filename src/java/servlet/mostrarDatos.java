@@ -19,7 +19,8 @@ public class mostrarDatos extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             ConectorBD conector = new ConectorBD();
-            Vista z = new Vista();
+            
+            
             Enumeration<String> array = request.getParameterNames();
             String [] alumno = new String[14];
             
@@ -46,10 +47,13 @@ public class mostrarDatos extends HttpServlet {
             
             out.println("<img src='https://media.tenor.com/images/be2fb8bdbd649cf6d57844340167cbdb/tenor.gif'>");
             
-            out.println(z.mostrarAlumnos());
+            
             
             out.println("</body>");
             out.println("</html>");
+            
+            Vista z = new Vista();
+            out.println(z.mostrar());
         }
     }
 

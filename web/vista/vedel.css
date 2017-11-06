@@ -1,0 +1,12 @@
+body{
+    font-family: 'calibri';
+}
+
+table{
+    border: solid black 2px
+}
+
+table td{
+    border: solid black 2px;
+    padding: 10px;
+}

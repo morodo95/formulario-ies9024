@@ -16,7 +16,18 @@
         padding-bottom: 1rem;
     }
 
-
+    .login{
+        background-color: #F39B53;
+        border-top: solid 5pt #F39B53;
+    }
+    
+    .login button{
+        width: 45pt;
+        height: 25pt;
+        border-bottom: solid black 3pt;
+        background-color: #EFEFEF;
+    }
+    
     .form_top{
         width: 100%;
         text-align: center;
@@ -206,7 +217,18 @@
 
 
     }
-
+    
+    .login{
+        background-color: #F39B53;
+        border-top: solid 5pt #F39B53;
+    }
+    
+    .login button{
+        width: 45pt;
+        height: 25pt;
+        border-bottom: solid black 3pt;
+        background-color: #EFEFEF;
+    }
 
     .form_top{
         width: 100%;
@@ -433,6 +455,18 @@
         color:#F39B53;
         text-align: center;
 
+    }
+    
+    .login{
+        background-color: #F39B53;
+        border-top: solid 5pt #F39B53;
+    }
+    
+    .login button{
+        width: 45pt;
+        height: 25pt;
+        border-bottom: solid black 3pt;
+        background-color: #EFEFEF;
     }
 
     .form_reg{

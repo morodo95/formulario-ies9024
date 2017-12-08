@@ -16,8 +16,7 @@
     <title>Registro IES-9024 Online</title>
 </head>
 <body>
-    <div class="login"><input type="text" class="input" id="nombreUsuario"> <input type="password" class="input" id="contraseña"> <button onclick="mostrarAlumnos()">Aceptar</button></div>   
-    <link href='img/NYCS-bull-trans-F.svg.png' rel='shortcut icon' type='image/png'>
+
         <div class="form_top">
             <h2>IES 9-024 - <span>INSCRIPCIÓN </span>- SISTEMAS <span>PAGINA 1</span></h2>
             <img src="./img/LOGO_NUEVO.png" >
@@ -34,6 +33,7 @@
                     <li><a href="#tab3"><span aria-hidden="true"><span class="tab-text" >Segunda Pagina </span></span></a></li>
                     <li><a href="#tab4"><span aria-hidden="true"><span class="tab-text" >Tercera Pagina </span></span></a></li>
                     <li><a href="#tab5" id="enviarform"><span aria-hidden="true"><span class="tab-text" >Enviar Formulario </span></span></a></li>
+                    <li><a href="#tab6" id="enviarform"><span aria-hidden="true"><span class="tab-text" >Vedel </span></span></a></li>
                 </ul>
             </ul>
             <div class="secciones">
@@ -385,6 +385,26 @@
                     </center>
                     <br>          
                 </article>  
+
+                <article id="tab6">
+                    <center>
+                        <h2 style="color:brown">VEA LOS DATOS DE LOS INGRESANTES</h2>
+                        <h2> Ingrese usuario y contraseña.</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="container-formulario">
+                        <input type="text" class="input" id="nombreUsuario" placeholder="Usuario">
+                        <input type="password" class="input" id="contraseña" placeholder="Contraseña">
+
+                        </div>
+                        <button id="botonmostrar" onclick="mostrarAlumnos()">Aceptar</button>
+
+
+
+                    </center>
+                    <br>
+                </article>
              <ul>
                  <ul class="tabs" style="">
                      <center><h3 style="color:white;font-family: arial">Esta web fue creada con propositos educativos, todo los derechos reservados.</h3></center>

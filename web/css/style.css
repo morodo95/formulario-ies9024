@@ -123,3 +123,19 @@ ul.tabs li a .tab-text{
     }
     
 }
+
+.container-formulario{
+    font-family:sans-serif;
+    width: 300px;
+    height: 340px;
+    background-color:#0984CC;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 0px #363633;
+
+}
+
+#botonmostrar{
+    background-color: red;
+}
